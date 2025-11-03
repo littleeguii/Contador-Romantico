@@ -1,0 +1,86 @@
+/* Configuração geral do corpo da página */
+body {
+    /* Fonte bonita e legível */
+    font-family: 'Arial', sans-serif;
+    /* Um fundo em degradê suave rosa/pêssego */
+    background: linear-gradient(135deg, #ffdde1, #ee9ca7);
+    color: #444;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Ocupa a tela inteira */
+    margin: 0;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box; /* Garante que o padding não quebre o layout */
+}
+
+/* A caixa principal que segura o conteúdo */
+.container {
+    background: rgba(255, 255, 255, 0.9); /* Fundo branco semi-transparente */
+    padding: 30px 40px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* Título principal - usando a fonte especial */
+h1 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 3.5em; /* Tamanho grande */
+    color: #D81B60; /* Um tom de rosa forte */
+    margin-bottom: 10px;
+}
+
+/* A caixa do contador */
+.contador-box {
+    background: #D81B60;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 30px 0;
+    box-shadow: 0 5px 15px rgba(216, 27, 96, 0.4);
+}
+
+/* O número de dias */
+#dias-contador {
+    font-size: 5em; /* Número bem grande */
+    font-weight: bold;
+    display: block;
+    margin: 10px 0;
+}
+
+/* Textos do contador */
+.contador-box h2, .contador-box h3 {
+    margin: 0;
+    font-weight: 300; /* Fonte mais leve */
+}
+
+/* Mensagem final */
+.mensagem-final {
+    font-style: italic;
+    font-size: 1.2em;
+    color: #555;
+}
+
+/* botão de musica */  
+#musica-toggle-btn {
+    background: #D81B60;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    font-size: 1em;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+    margin-top: 20px;
+}
+
+#musica-toggle-btn:hover {
+    background: #AD1457;
+    transform: scale(1.05);
+}
+
+/* Esconde o player de áudio padrão */
+#musica-fundo {
+    display: none;
+}
